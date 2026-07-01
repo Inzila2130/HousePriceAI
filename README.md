@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.png" alt="HousePriceAI Banner" width="100%">
+  <img src="static/images/banner.png" alt="HousePriceAI Banner" width="100%">
 </p>
 
 <h1 align="center">
@@ -27,13 +27,13 @@ AI-powered House Price Prediction using Machine Learning, Flask and Scikit-Learn
 
 <p align="center">
 
-<img src="images/screenshots/homepage.png" width="90%">
+<img src="static/screenshots/homepage.png" width="90%">
 
 </p>
 
 <p align="center">
 
-<img src="images/screenshots/prediction.png" width="90%">
+<img src="static/screenshots/prediction.png" width="90%">
 
 </p>
 
@@ -180,25 +180,25 @@ http://127.0.0.1:5000
 
 ### 🏠 Home Page
 
-<img src="images/screenshots/homepage.png" width="100%">
+<img src="static/screenshots/homepage.png" width="100%">
 
 ---
 
 ### 🤖 Prediction Lab
 
-<img src="images/screenshots/prediction.png" width="100%">
+<img src="static/screenshots/prediction.png" width="100%">
 
 ---
 
 ### 🏡 Property Passport
 
-<img src="images/screenshots/passport.png" width="100%">
+<img src="static/screenshots/passport.png" width="100%">
 
 ---
 
 ### 📊 Statistics Room
 
-<img src="images/screenshots/statistics.png" width="100%">
+<img src="static/screenshots/statistics.png" width="100%">
 
 ---
 
