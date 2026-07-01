@@ -27,13 +27,13 @@ AI-powered House Price Prediction using Machine Learning, Flask and Scikit-Learn
 
 <p align="center">
 
-<img src="screenshots/homepage.png" width="90%">
+<img src="images/screenshots/homepage.png" width="90%">
 
 </p>
 
 <p align="center">
 
-<img src="screenshots/prediction.png" width="90%">
+<img src="images/screenshots/prediction.png" width="90%">
 
 </p>
 
@@ -105,7 +105,7 @@ HousePriceAI/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/HousePriceAI.git
+git clone https://github.com/Inzila2130/HousePriceAI.git
 ```
 
 Go to the project folder:
@@ -180,25 +180,25 @@ http://127.0.0.1:5000
 
 ### 🏠 Home Page
 
-<img src="screenshots/homepage.png" width="100%">
+<img src="images/screenshots/homepage.png" width="100%">
 
 ---
 
 ### 🤖 Prediction Lab
 
-<img src="screenshots/prediction.png" width="100%">
+<img src="images/screenshots/prediction.png" width="100%">
 
 ---
 
 ### 🏡 Property Passport
 
-<img src="screenshots/passport.png" width="100%">
+<img src="images/screenshots/passport.png" width="100%">
 
 ---
 
 ### 📊 Statistics Room
 
-<img src="screenshots/statistics.png" width="100%">
+<img src="images/screenshots/statistics.png" width="100%">
 
 ---
 
@@ -224,6 +224,4 @@ Machine Learning & AI Project
 
 ---
 
-## ⭐ If you like this project
-
-Thank you for visiting this project. Feedback and suggestions are always appreciated.
+## Thank you for visiting this project. Feedback and suggestions are always appreciated.
