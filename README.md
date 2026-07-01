@@ -1,14 +1,41 @@
-# 🏠 HousePriceAI
+<p align="center">
+  <img src="images/banner.png" alt="HousePriceAI Banner" width="100%">
+</p>
 
-An AI-powered web application that predicts residential house prices using a Machine Learning Linear Regression model. Built with Flask, Scikit-Learn, HTML, CSS, and JavaScript.
+<h1 align="center">
+🏠 HousePriceAI
+</h1>
 
+<p align="center">
+
+AI-powered House Price Prediction using Machine Learning, Flask and Scikit-Learn.
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.13-blue?logo=python">
+<img src="https://img.shields.io/badge/Flask-Web_App-black?logo=flask">
+<img src="https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn">
+<img src="https://img.shields.io/badge/License-MIT-green">
+<img src="https://img.shields.io/badge/Status-Live-success">
+
+</p>
 ---
 
 ## 📸 Project Preview
 
-> *(Add screenshots of your homepage and prediction page here after uploading them to GitHub.)*
+<p align="center">
 
----
+<img src="screenshots/homepage.png" width="90%">
+
+</p>
+
+<p align="center">
+
+<img src="screenshots/prediction.png" width="90%">
+
+</p>
 
 ## 🚀 Features
 
@@ -151,29 +178,41 @@ http://127.0.0.1:5000
 
 ## 📷 Screenshots
 
-### Home Page
+### 🏠 Home Page
 
-*(Add screenshot here)*
+<img src="screenshots/homepage.png" width="100%">
 
-### Prediction Lab
+---
 
-*(Add screenshot here)*
+### 🤖 Prediction Lab
 
-### Property Passport
+<img src="screenshots/prediction.png" width="100%">
 
-*(Add screenshot here)*
+---
 
-### Statistics Room
+### 🏡 Property Passport
 
-*(Add screenshot here)*
+<img src="screenshots/passport.png" width="100%">
+
+---
+
+### 📊 Statistics Room
+
+<img src="screenshots/statistics.png" width="100%">
 
 ---
 
 ## 🌐 Live Demo
 
-**Coming Soon**
+**https://housepriceai-mwan.onrender.com**
 
-*(Replace with your Render URL after deployment.)*
+---
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
