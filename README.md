@@ -27,7 +27,7 @@ AI-powered House Price Prediction using Machine Learning, Flask and Scikit-Learn
 
 <p align="center">
 
-<img src="static/screenshots/homepage.png" width="90%">
+<img src="static/screenshots/home-page.png" width="90%">
 
 </p>
 
@@ -180,7 +180,7 @@ http://127.0.0.1:5000
 
 ### 🏠 Home Page
 
-<img src="static/screenshots/homepage.png" width="100%">
+<img src="static/screenshots/home-page.png" width="100%">
 
 ---
 
@@ -192,7 +192,7 @@ http://127.0.0.1:5000
 
 ### 🏡 Property Passport
 
-<img src="static/screenshots/passport.png" width="100%">
+<img src="static/screenshots/property-passport.png" width="100%">
 
 ---
 
