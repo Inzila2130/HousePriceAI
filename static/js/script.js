@@ -10,9 +10,9 @@ Mobile Navigation
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.querySelector(".nav-links");
 
-if(menuBtn){
+if (menuBtn) {
 
-    menuBtn.addEventListener("click",()=>{
+    menuBtn.addEventListener("click", () => {
 
         navLinks.classList.toggle("show");
 
@@ -25,19 +25,19 @@ if(menuBtn){
 Smooth Navigation
 =========================*/
 
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-    link.addEventListener("click",function(e){
+    link.addEventListener("click", function (e) {
 
         e.preventDefault();
 
-        const target=document.querySelector(this.getAttribute("href"));
+        const target = document.querySelector(this.getAttribute("href"));
 
-        if(target){
+        if (target) {
 
             target.scrollIntoView({
 
-                behavior:"smooth"
+                behavior: "smooth"
 
             });
 
@@ -53,19 +53,23 @@ PROPERTY PASSPORT GALLERY
 =====================================*/
 
 const images = [
+
     "/static/images/properties/front-exterior.jpg",
     "/static/images/properties/living-room.jpg",
     "/static/images/properties/modern-kitchen.jpg",
     "/static/images/properties/master-bedroom.jpg",
     "/static/images/properties/back-garden.jpg"
+
 ];
 
 const captions = [
+
     "Front Exterior",
     "Luxury Living Room",
     "Modern Kitchen",
     "Master Bedroom",
     "Back Garden"
+
 ];
 
 let current = 0;
@@ -90,14 +94,15 @@ function updateGallery() {
     dots.forEach(dot => dot.classList.remove("active"));
 
     if (dots[current]) {
+
         dots[current].classList.add("active");
+
     }
+
 }
 
-// Initial gallery
 updateGallery();
 
-// Next Button
 if (nextBtn) {
 
     nextBtn.addEventListener("click", function () {
@@ -105,7 +110,9 @@ if (nextBtn) {
         current++;
 
         if (current >= images.length) {
+
             current = 0;
+
         }
 
         updateGallery();
@@ -114,7 +121,6 @@ if (nextBtn) {
 
 }
 
-// Previous Button
 if (prevBtn) {
 
     prevBtn.addEventListener("click", function () {
@@ -122,7 +128,9 @@ if (prevBtn) {
         current--;
 
         if (current < 0) {
+
             current = images.length - 1;
+
         }
 
         updateGallery();
@@ -131,12 +139,12 @@ if (prevBtn) {
 
 }
 
-// Dots
 dots.forEach((dot, index) => {
 
     dot.addEventListener("click", function () {
 
         current = index;
+
         updateGallery();
 
     });
@@ -148,74 +156,90 @@ dots.forEach((dot, index) => {
 COUNTER ANIMATION
 =====================================*/
 
-function animateCounter(id,target,duration){
+function animateCounter(id, target, duration) {
 
-const element=document.getElementById(id);
+    const element = document.getElementById(id);
 
-if(!element) return;
+    if (!element) return;
 
-let start=0;
+    let start = 0;
 
-const increment=target/(duration/16);
+    const increment = target / (duration / 16);
 
-function update(){
+    function update() {
 
-start+=increment;
+        start += increment;
 
-if(start<target){
+        if (start < target) {
 
-element.innerText=Math.floor(start);
+            element.innerText = Math.floor(start);
 
-requestAnimationFrame(update);
+            requestAnimationFrame(update);
 
-}
+        }
 
-else{
+        else {
 
-element.innerText=target;
+            element.innerText = target;
 
-}
+        }
 
-}
+    }
 
-update();
+    update();
 
 }
 
 
 /*=====================================
-OBSERVER
+STATISTICS OBSERVER
 =====================================*/
 
-const stats=document.getElementById("statistics-room");
+const stats = document.getElementById("statistics-room");
 
-let played=false;
+let played = false;
 
-const observer=new IntersectionObserver(entries=>{
+function playCounters() {
 
-entries.forEach(entry=>{
+    console.log("playCounters called");
 
-if(entry.isIntersecting && !played){
-
-played=true;
-
-animateCounter("mae-counter",210,1500);
-
-animateCounter("rmse-counter",320,1500);
-
-animateCounter("r2-counter",91,1500);
-
-animateCounter("dataset-counter",545,1800);
+    animateCounter("mae-counter", 210, 1500);
+    animateCounter("rmse-counter", 320, 1500);
+    animateCounter("r2-counter", 91, 1500);
+    animateCounter("dataset-counter", 545, 1800);
 
 }
 
-});
+if (stats) {
 
-},{threshold:.4});
+    const observer = new IntersectionObserver((entries) => {
 
-if(stats){
+        entries.forEach(entry => {
 
-observer.observe(stats);
+            if (entry.isIntersecting) {
+
+                playCounters();
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.3
+
+    });
+
+    observer.observe(stats);
+
+    // If already visible on page load
+    const rect = stats.getBoundingClientRect();
+
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+
+        playCounters();
+
+    }
 
 }
 
@@ -224,29 +248,33 @@ observer.observe(stats);
 SCROLL FADE
 =====================================*/
 
-const sections=document.querySelectorAll(
+const sections = document.querySelectorAll(
 
-".room-section,.directory-section"
+    ".room-section,.directory-section"
 
 );
 
-const fadeObserver=new IntersectionObserver(entries=>{
+const fadeObserver = new IntersectionObserver((entries) => {
 
-entries.forEach(entry=>{
+    entries.forEach(entry => {
 
-if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
-entry.target.classList.add("fade-up");
+            entry.target.classList.add("fade-up");
 
-}
+        }
+
+    });
+
+}, {
+
+    threshold: 0.15
 
 });
 
-},{threshold:.15});
+sections.forEach(section => {
 
-sections.forEach(section=>{
-
-fadeObserver.observe(section);
+    fadeObserver.observe(section);
 
 });
 
@@ -255,35 +283,35 @@ fadeObserver.observe(section);
 ACTIVE NAV
 =====================================*/
 
-const navItems=document.querySelectorAll(".nav-links a");
+const navItems = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-let currentSection="";
+    let currentSection = "";
 
-document.querySelectorAll("section").forEach(section=>{
+    document.querySelectorAll("section").forEach(section => {
 
-const top=section.offsetTop-120;
+        const top = section.offsetTop - 120;
 
-if(pageYOffset>=top){
+        if (window.pageYOffset >= top) {
 
-currentSection=section.getAttribute("id");
+            currentSection = section.getAttribute("id");
 
-}
+        }
 
-});
+    });
 
-navItems.forEach(link=>{
+    navItems.forEach(link => {
 
-link.classList.remove("active");
+        link.classList.remove("active");
 
-if(link.getAttribute("href")==="#"+currentSection){
+        if (link.getAttribute("href") === "#" + currentSection) {
 
-link.classList.add("active");
+            link.classList.add("active");
 
-}
+        }
 
-});
+    });
 
 });
 
@@ -292,11 +320,11 @@ link.classList.add("active");
 IMAGE PRELOAD
 =====================================*/
 
-images.forEach(src=>{
+images.forEach(src => {
 
-const img=new Image();
+    const img = new Image();
 
-img.src=src;
+    img.src = src;
 
 });
 
@@ -305,9 +333,10 @@ img.src=src;
 END
 =====================================*/
 
-console.log("🏠 HousePriceAI Loaded Successfully");
 
-console.log(image);
-console.log(prevBtn);
-console.log(nextBtn);
-console.log(dots.length);
+window.addEventListener("load", function () {
+
+    playCounters();
+
+});
+console.log("🏠 HousePriceAI Loaded Successfully");
