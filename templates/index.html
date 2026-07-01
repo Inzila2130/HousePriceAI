@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HousePriceAI Headquarters</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ========================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#" class="logo">
+
+            <img src="{{ url_for('static',
+            filename='images/HousePriceAI-logo.png') }}"
+            alt="HousePriceAI Logo">
+
+            <span>
+
+                HousePriceAI
+
+                <small>
+
+                    AI Headquarters
+
+                </small>
+
+            </span>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#house-directory">
+                    Directory
+                </a>
+            </li>
+
+            <li>
+                <a href="#prediction-room">
+                    Prediction
+                </a>
+            </li>
+
+            <li>
+                <a href="#snapshot-room">
+                    Passport
+                </a>
+            </li>
+
+            <li>
+                <a href="#statistics-room">
+                    Statistics
+                </a>
+            </li>
+
+            <li>
+                <a href="#about-room">
+                    About
+                </a>
+            </li>
+
+        </ul>
+
+        <button
+        class="menu-btn"
+        id="menuBtn">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ========================================= -->
+<!-- HERO -->
+<!-- ========================================= -->
+
+<section class="hero">
+
+<div class="container hero-container">
+
+<div class="hero-content fade-up">
+
+<span class="hero-tag">
+
+HousePriceAI AI Headquarters
+
+</span>
+
+<h1>
+
+AI Powered Property Intelligence Platform
+
+</h1>
+
+<p>
+
+Explore a virtual AI headquarters where you can predict
+house prices, analyze property insights, and navigate
+intelligent real estate departments.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#house-directory"
+class="primary-btn">
+
+Enter Headquarters
+
+</a>
+
+<a href="#prediction-room"
+class="secondary-btn">
+
+Try Prediction
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image fade-up">
+
+<img
+
+src="{{ url_for('static',
+filename='images/rooms/entrance.png') }}"
+
+alt="Entrance">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- HOUSE DIRECTORY -->
+<!-- ========================================= -->
+
+<section id="house-directory" class="directory-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-tag">
+
+                Building Directory
+
+            </span>
+
+            <h2>
+
+                Welcome to HousePriceAI Headquarters
+
+            </h2>
+
+            <p>
+
+                Every department inside our virtual headquarters has a unique purpose.
+                Begin your journey by selecting a room below.
+
+            </p>
+
+        </div>
+
+        <div class="directory-grid">
+
+
+            <!-- Living Room -->
+
+            <a href="#living-room" class="room-card">
+
+                <div class="room-image">
+
+                    <img src="{{ url_for('static',
+                    filename='images/rooms/living.png') }}"
+                    alt="Living Room">
+
+                </div>
+
+                <div class="room-info">
+
+                    <span>
+
+                        Department 01
+
+                    </span>
+
+                    <h3>
+
+                        Living Room
+
+                    </h3>
+
+                    <p>
+
+                        Start your AI journey and learn
+                        about HousePriceAI Headquarters.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Prediction -->
+
+            <a href="#prediction-room" class="room-card">
+
+                <div class="room-image">
+
+                    <img src="{{ url_for('static',
+                    filename='images/rooms/prediction.png') }}"
+                    alt="Prediction">
+
+                </div>
+
+                <div class="room-info">
+
+                    <span>
+
+                        Department 02
+
+                    </span>
+
+                    <h3>
+
+                        Prediction Laboratory
+
+                    </h3>
+
+                    <p>
+
+                        Enter property information and
+                        predict house prices using AI.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Passport -->
+
+            <a href="#snapshot-room" class="room-card">
+
+                <div class="room-image">
+
+                    <img src="{{ url_for('static',
+                    filename='images/rooms/snapshot.png') }}"
+                    alt="Passport">
+
+                </div>
+
+                <div class="room-info">
+
+                    <span>
+
+                        Department 03
+
+                    </span>
+
+                    <h3>
+
+                        Property Passport
+
+                    </h3>
+
+                    <p>
+
+                        Explore premium property images,
+                        details and AI insights.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Statistics -->
+
+            <a href="#statistics-room" class="room-card">
+
+                <div class="room-image">
+
+                    <img src="{{ url_for('static',
+                    filename='images/rooms/statistics.png') }}"
+                    alt="Statistics">
+
+                </div>
+
+                <div class="room-info">
+
+                    <span>
+
+                        Department 04
+
+                    </span>
+
+                    <h3>
+
+                        Statistics Room
+
+                    </h3>
+
+                    <p>
+
+                        Discover model accuracy,
+                        evaluation metrics and
+                        AI performance.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Innovation -->
+
+            <a href="#about-room" class="room-card">
+
+                <div class="room-image">
+
+                    <img src="{{ url_for('static',
+                    filename='images/rooms/about.png') }}"
+                    alt="Innovation">
+
+                </div>
+
+                <div class="room-info">
+
+                    <span>
+
+                        Department 05
+
+                    </span>
+
+                    <h3>
+
+                        Innovation Center
+
+                    </h3>
+
+                    <p>
+
+                        Learn how HousePriceAI was built,
+                        technologies used and future roadmap.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================= -->
+<!-- LIVING ROOM -->
+<!-- ========================================= -->
+
+<section id="living-room" class="room-section">
+
+    <div class="container">
+
+        <div class="room-layout">
+
+            <div class="room-left">
+
+                <img
+
+                src="{{ url_for('static',
+                filename='images/rooms/living.png') }}"
+
+                alt="Living Room">
+
+            </div>
+
+            <div class="room-right">
+
+                <span class="room-label">
+
+                    Department 01
+
+                </span>
+
+                <h2>
+
+                    Living Room
+
+                </h2>
+
+                <p>
+
+                    Welcome to HousePriceAI Headquarters.
+
+                    This virtual headquarters demonstrates how
+                    Artificial Intelligence can estimate
+                    residential property prices using
+                    Machine Learning.
+
+                </p>
+
+                <p>
+
+                    Navigate through each department to explore
+                    intelligent prediction, property analysis,
+                    AI statistics and future innovations.
+
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature-item">
+
+                        ✔ Machine Learning Prediction
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        ✔ Interactive Property Passport
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        ✔ AI Analytics Dashboard
+
+                    </div>
+
+                    <div class="feature-item">
+
+                        ✔ Modern Flask Web Application
+
+                    </div>
+
+                </div>
+
+                <a href="#prediction-room"
+                class="primary-btn">
+
+                    Continue to Prediction Lab →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PREDICTION LABORATORY -->
+<!-- ========================================= -->
+
+<section id="prediction-room" class="room-section">
+
+    <div class="container">
+
+        <div class="room-header">
+
+            <span class="room-label">AI Prediction Lab</span>
+
+            <h2>Prediction Laboratory</h2>
+
+            <p>
+                Enter your property details below and let our Machine Learning model
+                estimate the property's market value.
+            </p>
+
+        </div>
+
+        <div class="prediction-grid">
+
+            <!-- LEFT SIDE -->
+
+            <div class="prediction-form-card">
+
+                <div class="prediction-form">
+
+                    
+                            <h3>Property Information</h3>
+                            <p>
+                                Provide accurate details to get the most precise price prediction.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <form action="/" method="POST">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label>Area (sq.ft)</label>
+                                <input type="number" name="area" placeholder="7420" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Bedrooms</label>
+                                <select name="bedrooms">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Bathrooms</label>
+                                <select name="bathrooms">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Stories</label>
+                                <select name="stories">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Parking</label>
+                                <select name="parking">
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Furnishing</label>
+                                <select name="furnishingstatus">
+                                    <option>Furnished</option>
+                                    <option>Semi-Furnished</option>
+                                    <option>Unfurnished</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Main Road</label>
+                                <select name="mainroad">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Guest Room</label>
+                                <select name="guestroom">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Basement</label>
+                                <select name="basement">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Hot Water Heating</label>
+                                <select name="hotwaterheating">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Air Conditioning</label>
+                                <select name="airconditioning">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Preferred Area</label>
+                                <select name="prefarea">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="predict-btn">
+                            ✨ Predict House Price
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+          <div class="prediction-result-card">
+
+    <div class="assistant-header">
+
+        <div class="assistant-image">
+            <img src="{{ url_for('static', filename='images/rooms/prediction.png') }}"
+                 alt="Crystal Ball">
+        </div>
+
+        <div class="assistant-info">
+            <h3>AI Prediction Assistant</h3>
+
+            <p>
+                HousePriceAI analyzes every property using a trained
+                Linear Regression model to estimate its market value.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Waiting Prediction Section -->
+
+    <div class="prediction-status">
+        <h4>⏳ Waiting for Prediction...</h4>
+        <p>Fill the property details and click "Predict House Price".</p>
+    </div>
+
+    <!-- Recommendation Section -->
+
+    <div class="recommendation-box">
+        <h4>✅ AI Recommendation</h4>
+        <p>
+            Predictions are generated from historical housing data and
+            should be considered intelligent market estimates.
+        </p>
+    </div>
+
+</div>
+</section>
+
+<!-- ========================================= -->
+<!-- PROPERTY PASSPORT -->
+<!-- ========================================= -->
+
+<section id="snapshot-room" class="room-section">
+
+    <div class="container">
+
+        <div class="room-header">
+
+            <span class="room-label">
+
+                Department 03
+
+            </span>
+
+            <h2>
+
+                Property Passport
+
+            </h2>
+
+            <p>
+
+                Explore a premium showcase of the predicted
+                property including images, details and AI insights.
+
+            </p>
+
+        </div>
+
+        <div class="passport-grid">
+
+            <!-- ================================= -->
+            <!-- IMAGE GALLERY -->
+            <!-- ================================= -->
+
+            <div class="gallery-card">
+
+                <div class="gallery-image-wrapper">
+
+                    <img
+
+                    id="property-image"
+
+                    src="{{ url_for('static',
+                    filename='images/properties/front-exterior.jpg') }}"
+
+                    alt="Property Image">
+
+                    <button
+                    id="prevBtn"
+                    class="gallery-btn left">
+
+                        &#10094;
+
+                    </button>
+
+                    <button
+                    id="nextBtn"
+                    class="gallery-btn right">
+
+                        &#10095;
+
+                    </button>
+
+                </div>
+
+                <div class="gallery-footer">
+
+                    <div class="gallery-top">
+
+                        <span id="image-counter">
+
+                            1 / 5
+
+                        </span>
+
+                        <span class="property-id">
+
+                            Property ID #HPAI-001
+
+                        </span>
+
+                    </div>
+
+                    <p id="image-caption">
+
+                        Front Exterior View
+
+                    </p>
+
+                    <div class="gallery-dots">
+
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- PROPERTY SUMMARY -->
+            <!-- ================================= -->
+
+            <div class="passport-card">
+
+                <h3>
+
+                    Property Summary
+
+                </h3>
+
+                <div class="summary-grid">
+
+    <div class="summary-item">
+        <span>Area</span>
+        <strong>{{ area }} sq.ft</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Bedrooms</span>
+        <strong>{{ bedrooms }} Bedrooms</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Bathrooms</span>
+        <strong>{{ bathrooms }} Bathrooms</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Stories</span>
+        <strong>{{ stories }} Floors</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Parking</span>
+        <strong>{{ parking }} Car Spaces</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Preferred Area</span>
+        <strong>
+            {% if prefarea == 1 %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
+        </strong>
+    </div>
+
+</div>                
+
+                {% if predicted_price is not none %}
+
+                <div class="price-highlight">
+
+                    <span>
+
+                        Estimated Price
+
+                    </span>
+
+                    <h1>
+
+                        ₹ {{ "{:,.0f}".format(predicted_price) }}
+
+                    </h1>
+
+                </div>
+
+                {% else %}
+
+                <div class="price-highlight">
+
+                    <span>
+
+                        Estimated Price
+
+                    </span>
+
+                    <h1>
+
+                       ----
+
+                    </h1>
+
+                </div>
+
+                {% endif %}
+
+                <div class="confidence-box">
+
+                    <div class="confidence-header">
+
+                        <span>
+
+                            AI Confidence
+
+                        </span>
+
+                        <strong>
+
+                            High
+
+                        </strong>
+
+                    </div>
+
+                    <div class="confidence-progress">
+
+                        <div class="confidence-fill"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="feature-tags">
+
+                    <span>Main Road</span>
+
+                    <span>Basement</span>
+
+                    <span>Air Conditioning</span>
+
+                    <span>Furnished</span>
+
+                </div>
+
+                <div class="coming-soon">
+
+                    <h4>
+
+                        🚀 Future Enhancement
+
+                    </h4>
+
+                    <p>
+
+                        Soon, users will be able to upload their
+                        own house images and receive AI-powered
+                        property analysis.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- STATISTICS ROOM -->
+<!-- ========================================= -->
+
+<section id="statistics-room" class="room-section">
+
+    <div class="container">
+
+        <div class="room-header">
+
+            <span class="room-label">
+
+                Department 04
+
+            </span>
+
+            <h2>
+
+                AI Statistics Room
+
+            </h2>
+
+            <p>
+
+                Explore the performance of the Machine Learning
+                model behind HousePriceAI and understand how
+                every prediction is generated.
+
+            </p>
+
+        </div>
+
+        <!-- ================= Metrics ================= -->
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <img src="{{ url_for('static',
+                filename='images/rooms/statistics.png') }}">
+
+                <h3>
+
+                    MAE
+
+                </h3>
+
+                <h1 id="mae-counter">
+
+                    0
+
+                </h1>
+
+                <p>
+
+                    Mean Absolute Error
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <img src="{{ url_for('static',
+                filename='images/rooms/statistics.png') }}">
+
+                <h3>
+
+                    RMSE
+
+                </h3>
+
+                <h1 id="rmse-counter">
+
+                    0
+
+                </h1>
+
+                <p>
+
+                    Root Mean Squared Error
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <img src="{{ url_for('static',
+                filename='images/rooms/statistics.png') }}">
+
+                <h3>
+
+                    R² Score
+
+                </h3>
+
+                <h1 id="r2-counter">
+
+                    0
+
+                </h1>
+
+                <p>
+
+                    Model Accuracy
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <img src="{{ url_for('static',
+                filename='images/rooms/statistics.png') }}">
+
+                <h3>
+
+                    Dataset
+
+                </h3>
+
+                <h1 id="dataset-counter">
+
+                    0
+
+                </h1>
+
+                <p>
+
+                    Houses Used
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ================= AI Model ================= -->
+
+        <div class="stats-two-column">
+
+            <div class="stats-panel">
+
+                <h3>
+
+                    Model Information
+
+                </h3>
+
+                <table class="stats-table">
+
+                    <tr>
+
+                        <td>Algorithm</td>
+
+                        <td>Linear Regression</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Framework</td>
+
+                        <td>Scikit-Learn</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Backend</td>
+
+                        <td>Flask</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Scaler</td>
+
+                        <td>StandardScaler</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Language</td>
+
+                        <td>Python</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Prediction Type</td>
+
+                        <td>Regression</td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="stats-panel">
+
+                <h3>
+
+                    Model Features
+
+                </h3>
+
+                <ul class="feature-checklist">
+
+                    <li>✔ Area</li>
+
+                    <li>✔ Bedrooms</li>
+
+                    <li>✔ Bathrooms</li>
+
+                    <li>✔ Stories</li>
+
+                    <li>✔ Parking</li>
+
+                    <li>✔ Furnishing Status</li>
+
+                    <li>✔ Main Road</li>
+
+                    <li>✔ Basement</li>
+
+                    <li>✔ Air Conditioning</li>
+
+                    <li>✔ Preferred Area</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Pipeline ================= -->
+
+        <div class="pipeline-card">
+
+            <h3>
+
+                AI Prediction Pipeline
+
+            </h3>
+
+            <div class="pipeline">
+
+                <div class="pipeline-step">
+
+                    📊 Dataset
+
+                </div>
+
+                <div class="pipeline-arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="pipeline-step">
+
+                    🧹 Cleaning
+
+                </div>
+
+                <div class="pipeline-arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="pipeline-step">
+
+                    🏷 Encoding
+
+                </div>
+
+                <div class="pipeline-arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="pipeline-step">
+
+                    ⚖ Scaling
+
+                </div>
+
+                <div class="pipeline-arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="pipeline-step">
+
+                    🤖 Linear Regression
+
+                </div>
+
+                <div class="pipeline-arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="pipeline-step">
+
+                    🏠 Price Prediction
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Future ================= -->
+
+        <div class="future-card">
+
+            <h3>
+
+                🚀 Coming Soon
+
+            </h3>
+
+            <div class="future-grid">
+
+                <div>
+
+                    📊 Explainable AI
+
+                </div>
+
+                <div>
+
+                    📈 Feature Importance
+
+                </div>
+
+                <div>
+
+                    🧠 SHAP Visualization
+
+                </div>
+
+                <div>
+
+                    🗺 Property Heatmap
+
+                </div>
+
+                <div>
+
+                    📍 Interactive Maps
+
+                </div>
+
+                <div>
+
+                    ❤️ Favorite Properties
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ABOUT -->
+<!-- ========================================= -->
+
+<section id="about-room" class="room-section">
+
+    <div class="container">
+
+        <div class="room-header">
+
+            <span class="room-label">
+
+                Department 05
+
+            </span>
+
+            <h2>
+
+                About HousePriceAI
+
+            </h2>
+
+            <p>
+
+                HousePriceAI is a Machine Learning based web
+                application developed to estimate residential
+                property prices using Artificial Intelligence.
+
+            </p>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <h3>
+
+                    Project Overview
+
+                </h3>
+
+                <p>
+
+                    This project demonstrates the complete
+                    Machine Learning workflow, from data
+                    preprocessing and feature engineering to
+                    model training, deployment with Flask,
+                    and an interactive web interface.
+
+                </p>
+
+                <p>
+
+                    Users can enter property details, receive
+                    AI-powered price predictions, explore
+                    property snapshots, and understand the
+                    model through interactive analytics.
+
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>
+
+                    Technology Stack
+
+                </h3>
+
+                <div class="tech-grid">
+
+                    <span>Python</span>
+
+                    <span>Flask</span>
+
+                    <span>Scikit-Learn</span>
+
+                    <span>Pandas</span>
+
+                    <span>NumPy</span>
+
+                    <span>HTML5</span>
+
+                    <span>CSS3</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="developer-card">
+
+            <h3>
+
+                Developer
+
+            </h3>
+
+            <h2>
+
+                Inzila Danish Khan
+
+            </h2>
+
+            <p>
+
+                HousePriceAI was developed as a Machine Learning
+                project to demonstrate AI-powered property price
+                prediction through an interactive virtual
+                headquarters experience.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+{% if predicted_price is not none %}
+<script>
+window.onload = function () {
+    document.querySelector('.passport-card').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
+};
+</script>
+{% endif %}
+
+</body>
+</html>
